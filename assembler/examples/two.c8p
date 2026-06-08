@@ -1,0 +1,15 @@
+; draw a sprite at (10, 10)
+    LD   V0, 10
+    LD   V1, 10
+    LD   I, sprite
+    DRW  V0, V1, 5
+
+done:
+    JP   done
+
+sprite:
+    db 0xF0
+    db 0x90
+    db 0x90
+    db 0x90
+    db 0xF0

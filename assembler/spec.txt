@@ -1,0 +1,34 @@
+CLS                      ; 00E0 - clear screen
+RET                      ; 00EE - return
+JP   NNN                 ; 1NNN - jump
+JP   V0, NNN             ; BNNN - jump + V0
+CALL NNN                 ; 2NNN - call subroutine
+SE   VX, KK              ; 3XKK - skip if VX == byte
+SE   VX, VY              ; 5XY0 - skip if VX == VY
+SNE  VX, KK              ; 4XKK - skip if VX != byte
+SNE  VX, VY              ; 9XY0 - skip if VX != VY
+LD   VX, KK              ; 6XKK - VX = byte
+LD   VX, VY              ; 8XY0 - VX = VY
+LD   VX, DT              ; FX07 - VX = delay timer
+LD   VX, K               ; FX0A - VX = next key press
+LD   DT, VX              ; FX15 - delay timer = VX
+LD   ST, VX              ; FX18 - sound timer = VX
+LD   I, NNN              ; ANNN - I = address
+LD   F, VX               ; FX29 - I = font sprite for VX
+LD   B, VX               ; FX33 - BCD of VX at I
+LD   [I], VX             ; FX55 - store V0..VX at I
+LD   VX, [I]             ; FX65 - load V0..VX from I
+ADD  VX, KK              ; 7XKK - VX += byte
+ADD  VX, VY              ; 8XY4 - VX += VY, VF = carry
+ADD  I, VX               ; FX1E - I += VX
+SUB  VX, VY              ; 8XY5 - VX -= VY, VF = !borrow
+SUBN VX, VY              ; 8XY7 - VX = VY - VX, VF = !borrow
+OR   VX, VY              ; 8XY1
+AND  VX, VY              ; 8XY2
+XOR  VX, VY              ; 8XY3
+SHR  VX                  ; 8XY6 - VX >>= 1, VF = shifted bit
+SHL  VX                  ; 8XYE - VX <<= 1, VF = shifted bit
+SKP  VX                  ; EX9E - skip if key VX pressed
+SKNP VX                  ; EXA1 - skip if key VX not pressed
+DRW  VX, VY, N           ; DXYN - draw sprite
+RND  VX, KK              ; CXKK - VX = random & KK

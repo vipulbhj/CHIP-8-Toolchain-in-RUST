@@ -1,0 +1,7 @@
+; add 3 + 4, draw the result
+    LD   V0, 3
+    LD   V1, 4
+    ADD  V0, V1
+    
+done:
+    JP   done

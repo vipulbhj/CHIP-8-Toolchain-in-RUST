@@ -8,6 +8,8 @@ The goal of this repository is to become a small but complete CHIP-8 toolchain f
 
 **_BE CURIOUS. HAVE FUN._**
 
+![logo](./logo.png)
+
 ## Toolchain
 
 | Name      | Status         |
