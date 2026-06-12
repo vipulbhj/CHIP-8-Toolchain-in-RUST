@@ -1,10 +1,10 @@
 # CHIP-8 Toolchain in Rust
 
-This project started as a simple experiment: write a CHIP-8 emulator in Rust and learn more about emulator development along the way. The fact that CHIP-8 has a library of fun games to run was a nice bonus.
+This project started as a simple experiment: write a CHIP-8 emulator in Rust to explore emulator development. I picked CHIP-8 because it has a library of fun games.
 
-While building the emulator, I gained a new appreciation for the CHIP-8 architecture. It's remarkably simple, yet people managed to create surprisingly sophisticated software with it. That inspired me to go beyond the emulator itself and build the tools needed to create CHIP-8 software from scratch.
+While building the emulator, I gained appreciation for the CHIP-8 architecture. It's remarkably simple, yet people managed to create surprisingly sophisticated software with it. That inspired me to go beyond the emulator itself and build the tools needed to create CHIP-8 software from scratch.
 
-The goal of this repository is to become a small but complete CHIP-8 toolchain for writing, assembling, and running CHIP-8 programs.
+The goal of this repository is to become a small but complete CHIP-8 toolchain for writing, assembling, de-assembling and running CHIP-8 programs.
 
 **_BE CURIOUS. HAVE FUN._**
 
